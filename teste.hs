@@ -15,3 +15,9 @@ numero2 = [6, 7, 8, 9]
 vazio = []
 vazio2 = [vazio]
 vazio3 = [vazio2]
+
+cor pt = [if x < 5 then
+    "Salve o"
+    else "chorintians"
+    | x <- pt, odd x]
+

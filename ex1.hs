@@ -1,2 +1,4 @@
-func1 :: String -> String
-func1 a = a
+module CheckSameCase (sameCase) where
+
+sameCase :: Char -> Bool -> Char -> Integer
+sameCase a b | isAplha(a) = 1

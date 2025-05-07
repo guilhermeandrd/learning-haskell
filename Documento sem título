@@ -1,0 +1,3 @@
+--fib' xs@(a:b:ls) = [a] ++ fib' b (a+b)
+
+fib a b = [a] ++ fib b (a+b)

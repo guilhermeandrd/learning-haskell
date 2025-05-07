@@ -1,10 +1,8 @@
-teste :: Int -> Int -> Int
-teste a b = a+b
+f x y = x + y
 
-reduce ls f =
-    if length ls <1 then
-        error "voce silas"
+
+reduce ls f = 
+    if (length ls) <= 1 then 
+        head ls
     else 
-        f (head ls) (reduce (tail ls))
-        
---funcao lambda
+        f (head ls) (reduce (tail ls) f)

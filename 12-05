@@ -1,0 +1,6 @@
+funcao n =
+    if( n < 0)
+    then
+        "Negativo"
+    else
+        "Positivo ou negativo"

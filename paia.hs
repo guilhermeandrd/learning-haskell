@@ -47,4 +47,11 @@ sdig n = contsidg 0 n;
 contsidg :: Int -> Int -> Int
 contsidg m n
     | n <= 0 = m
-    | otherwise = contsidg  (m + (n `rem` 10)) (n `div` 10) 
+    | otherwise = contsidg  (m + (n `rem` 10)) (n `div` 10)
+
+rev n = contn 0 n
+
+contn :: Int -> Int -> Int
+contn m n
+    | n <= 0 = m
+    | otherwise = contn (m * 10 + n `rem` 10) (n `div` 10)
